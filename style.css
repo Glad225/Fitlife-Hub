@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --bg-col: #202020;
+  --link-col: #ffffff;
+  --color: #fff;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'inter';
+  width: 100%;
+  max-width: 1680px;
+  font-size: 16px;
+  background-color: var(--bg-col);
+  color: var(--color);
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 18px;
+  box-shadow: 0 1px 4px;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: var(--link-col);
+}
+a:hover {
+  color: color-mix(in oklab, var(--link-col) 40%, var(--bg-col));
+  text-decoration: underline;
+}
+h1{
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  margin-bottom: 10px;
+}
+/* header styles */
+.header-desktop{
+  display: none;
+}
+.fa-bars{
+  font-size: 30px;
+}
+main{
+  padding: 20px;
+}
+footer{
+  padding: 20px 20px;
+}
+/* body */
+.body-img {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+.body-img img {
+  height: 400px; 
+  object-fit: cover;
+}
+.started {
+  position: absolute;
+  text-align: center;
+  bottom: -43%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.text{
+  position: absolute;
+  top:30%;
+  right: 50%;
+}
+.text p{
+  font-size: 20px;
+  margin: 30px;
+  font-style: italic;
+}
+.lt{
+  color: rgb(190, 166, 166);
+  font-display: ;
+  margin: 10px 0px;
+}
+.started a {
+  background-color: var(--bg-col);
+  color: var(--color);
+  font-size: 20px;
+  padding: 10px 80px;
+  border-radius: 16px;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+.about img {
+  width: 120px;
+}
+.about-right {
+  padding-left: 20px;
+}
+
+/* feature */
+.feature-card{
+  padding: 10px;
+}
+.feature-card img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+/* subscription */
+.subscription{
+  margin: 20px 0;
+}
+.subscription h1{
+  margin-bottom: 20px;
+  margin-top: -30px;
+}
+input[type="text"], input[type="submit"]{
+  padding: 10px 16px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+input[type="submit"], button{
+  cursor: pointer;
+}
+input, button{
+  font: inherit;
+}
+/* main template */
+.main-template{
+  background-color: color-mix(in oklab, var(--bg-col) 80%, black );
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+form {
+padding: 20px;
+}
+label {
+  margin-bottom: 20px;
+  padding: 20px;
+  display: block;
+}
+.last-cont{
+  margin: 30px 0px;
+}
+.center{
+  text-align: center;
+  padding: 20px;
+}
+.all-subcont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.sub-cont{
+  border: 3px solid #5a5757;
+  border-radius: 10px;
+  padding: 20px;
+}
+.big{
+  font-size: 30px;
+  font-weight: 900;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  margin: 30px 30px;
+  width: 400px;
+}
+.padd{
+  margin: 10px 0px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.cost{
+  font-size: 30px;
+}
+.italic{
+  font-style: italic;
+}
+.purchase{
+  margin-top: 20px;
+  padding: 6px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+.purchase:hover{
+  background-color: #fff;
+}
+hr{
+  margin-bottom: 20px;
+}
+.header-mobile {
+  position: relative;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+#menu-icon {
+  font-size: 24px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #444;
+  list-style: none;
+  padding: 2px 2px;
+  margin: 0;
+  margin-top: 10px;
+  text-align: right;
+  z-index: 50;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li:hover {
+  background-color: #555;
+}
+
+.show {
+  display: block;
+}
+.fonts{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+h4{
+  text-align: center;
+}
+.last{
+  text-align: center;
+}
+@media  screen and (min-width:768px) {
+  .text p{
+    font-size: 40px;
+  }
+  .header-desktop{
+    display: flex;
+    gap: 20px;
+  }
+  .header-mobile{
+    display: none;
+  }
+  .inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .all-subcont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+  }
+}
